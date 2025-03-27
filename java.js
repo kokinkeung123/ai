@@ -69,8 +69,8 @@ carouselSlide.addEventListener('mouseleave', () => {
 
 
 function showPopup() {
-    document.getElementById('overlay').style.display = 'block';
-    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('popup').style.display = 'none';
 }
 
 function closePopup() {
