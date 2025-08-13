@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.carousel-slide {
+    display: flex;
+    height: 600px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.carousel-btn:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+#prevBtn {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+#nextBtn {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.indicator-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.indicator.active {
+    background: rgba(255,255,255,1);
+    transform: scale(1.2);
+}
+
+
+#nos{
+    color:chocolate
+}
+
+h1{
+    text-align: center;
+}
+
+.popup-wrapper{
+    background: rgb(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.popup{
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 950px;
+    padding: 120px;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0 0 10px rgba(0, 10, 3, 0.5);
+    z-index: 1000;
+    
+    
+}
+
+
+.popup input{
+    font-size: 22px;
+}
+
+.popup-close{
+    position: absolute;
+    right:20px;
+    top: 15px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    cursor:pointer;
+    
+}
+.popup button{
+    cursor: pointer;
+    
+}
+
+.close-btn {
+    background-color: #f40934; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.hide{
+  display: none;
+
+}
